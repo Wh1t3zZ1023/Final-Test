@@ -25,7 +25,7 @@ a:hover {
 
 a:active {
 	text-decoration: underline;
-	color: blue;
+	color: #0000ff;
 }
 /* 字体样式 */
 #right {

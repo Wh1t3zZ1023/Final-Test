@@ -33,7 +33,7 @@ public class SeekS {
 					ps = conn.prepareStatement(sql);
 					ps.setString(1, name);
 				}
-				if (ps != null) {
+				if (ps != null){
 					rs = ps.executeQuery();
 				}
 

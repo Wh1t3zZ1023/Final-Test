@@ -64,7 +64,7 @@ $().ready(function() {
 </head>
 <body bgcolor="#e5eecc" >
 <form action="${pageContext.request.contextPath}/UpdateStudentInfo_Servlet" method="post" id="myform">
-   <h3>&nbsp;&nbsp;添加学生用户：</h3>
+   <h3>&nbsp;&nbsp;修改个人信息：</h3>
       <table width="650px" border="1" align="center" cellpadding="2" cellspacing="2" bgcolor="#EEE8AA">
           <tr >
               <td width="150px" align="center">身&nbsp;&nbsp; 份：</td>

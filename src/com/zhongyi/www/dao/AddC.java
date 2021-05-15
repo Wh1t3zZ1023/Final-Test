@@ -19,16 +19,16 @@ public class AddC {
 		if (conn != null) {
 			try {
 				//添加课程信息
-				String sql = "insert into course (c_name,c_time,c_place,c_credit,c_teacher,c_no,c_limitnum,c_residuenum) values(?,?,?,?,?,?,?,?)";
+				String sql = "insert into course (c_no,c_name,c_time,c_place,c_credit,c_teacher,c_limitnum,c_residuenum) values(?,?,?,?,?,?,?,?)";
 				// 创建PreparedStatement对象
 				ps = conn.prepareStatement(sql);
 				// 对SQL语句中的参数动态赋值
-				ps.setString(1, name);
-				ps.setString(2, time);
-				ps.setString(3, place);
-				ps.setString(4, credit);
-				ps.setString(5, teacher);
-				ps.setString(6, no);
+				ps.setString(1, no);
+				ps.setString(2, name);
+				ps.setString(3, time);
+				ps.setString(4, place);
+				ps.setString(5, credit);
+				ps.setString(6, teacher);
 				ps.setString(7, "30");
 				ps.setString(8, "30");
 				// 执行更新操作

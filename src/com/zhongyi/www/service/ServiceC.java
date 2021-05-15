@@ -58,11 +58,11 @@ public class ServiceC {
 		String s3 = "授课教师";
 		if (select.equals(s1)) {
 			// 判断select的值
-			select = "C_No";
+			select = "c_no";
 		} else if (select.equals(s2)) {
-			select = "C_Name";
+			select = "c_name";
 		} else if (select.equals(s3)) {
-			select = "C_Teacher";
+			select = "c_teacher";
 		}
 		return new SeekC().seekC(select, seek, name, list);
 

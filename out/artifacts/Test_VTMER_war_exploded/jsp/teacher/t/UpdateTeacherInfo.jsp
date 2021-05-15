@@ -70,7 +70,7 @@
 	<form
 		action="${pageContext.request.contextPath}/UpdateTeacherInfo_Servlet"
 		method="post" id="myform">
-		<h3>&nbsp;&nbsp;添加学生用户：</h3>
+		<h3>&nbsp;&nbsp;修改个人信息：</h3>
 		<table width="650px" border="1" align="center" cellpadding="2"
 			cellspacing="2" bgcolor="#EEE8AA">
 			<tr>

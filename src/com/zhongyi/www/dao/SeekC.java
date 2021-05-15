@@ -20,11 +20,11 @@ public class SeekC {
 		Connection conn = JDBCUtils.conn;
 		PreparedStatement ps = null;
 		ResultSet rs = null;
+		String s1 = "模糊查询";
+		String s2 = "精确查询";
 		if (conn != null) {
 			try {
 				String sql = "";
-				String s1 = "模糊查询";
-				String s2 = "精确查询";
 				if (seek.equals(s1)) {
 					// 模糊查询课程
 					sql = "select * from course where " + select + " like '%" + name + "%'";
@@ -32,11 +32,12 @@ public class SeekC {
 				} else if (seek.equals(s2)) {
 					// 精准查询课程
 					sql = "select * from course where " + select + "=?";
-					// 创建PreparedStatement对象
 					ps = conn.prepareStatement(sql);
 					ps.setString(1, name);
 				}
-				rs = ps.executeQuery();
+				if (ps != null){
+					rs = ps.executeQuery();
+				}
 
 				while (rs.next()) {
 					Course c = new Course();
