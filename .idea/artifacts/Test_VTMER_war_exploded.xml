@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Test_VTMER:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Test_VTMER_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Test_VTMER/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Test_VTMER" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
